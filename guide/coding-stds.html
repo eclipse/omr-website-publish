@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>Coding standards</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dropit.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=latin,latin-ext">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:700,300,500,400,100' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script data-cfasync="false" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-cfasync="false" src="/js/app.js"></script>
+    <script data-cfasync="false" src="/js/retina.js"></script>
+    <script data-cfasync="false" src="/js/dropit.js"></script>
+    <script data-cfasync="false" src="/js/prism.js"></script>
+</head>
+
+  <body>
+
+    <section class="content">
+
+      <header>
+  <div id="mobile-menu">
+      <div id="nav-button" class="fa fa-bars fa-2x button"></div>
+  </div>
+  <section id="logo"><a href="/" class="omr">Eclipse OMR</a>
+  </section>
+  <div id="navbar">
+      <ul id="navmenu">
+          <li><a href="/" id="home-menu">Home</a></li>
+          <li>
+              <ul id="getting-started-menu" class="menu">
+                  <li><a href="/starter/whatisomr.html">Getting started</a>
+                      <ul>
+                          <li>
+                            <a href="/starter/whatisomr.html">What is OMR?</a>
+                          </li>
+                          <li>
+                            <a href="/starter/goals.html">Project goals</a>
+                          </li>
+                          <li>
+                          <a href="/starter/project.html">Get involved</a>
+                          </li>
+                     </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="guide-menu" class="menu">
+                  <li><a href="/guide/building.html" class="active">Guide</a>
+                      <ul>
+                          <li><a href="/guide/building.html">Building</a>
+                          </li>
+                          <li><a href="/guide/configuring.html">Configuring</a>
+                          </li>
+                          <li><a href="/guide/testing.html">Testing your runtime</a>
+                          </li>
+                          <li><a href="/guide/troubleshooting.html">Troubleshooting</a>
+                          </li>
+                          <li><a href="/guide/best-practices.html">Best practices</a>
+                          </li>
+                          <li><a href="/guide/coding-stds.html">Coding standards</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="reference-menu" class="menu">
+                  <li><a href="/reference/architecture.html">Reference</a>
+                      <ul>
+                          <li><a href="/reference/architecture.html">Architecture</a>
+                          </li>
+                          <li><a href="/reference/components.html">Components:</a>
+                          </li>
+						  <li><a class="subsub" href="/reference/thread.html">Thread</a>
+                          </li>
+                          <li><a class="subsub" href="/reference/gc.html">GC</a>
+                          </li>
+						  <li><a class="subsub" href="/reference/vm.html">VM</a>
+                          </li>
+                          <li><a class="subsub" href="/reference/jit.html">JIT</a>
+                          </li>
+						  <li><a class="subsub" href="/reference/port.html">Port</a>
+                          </li>
+                          <li><a class="subsub" href="/reference/tools.html">Tools</a>
+                          </li>
+						  <li><a class="subsub" href="/reference/glue.html">Glue</a>
+                          </li>
+						  <li><a class="subsub" href="/reference/util.html">Util</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="resources-menu" class="menu">
+                  <li><a href="/resources/omr-on-github.html">Resources</a>
+                      <ul>
+                          <li><a href="/resources/omr-on-github.html">OMR on GitHub</a>
+                          </li>
+                          <li><a href="/resources/presentations.html">Presentations</a>
+                          </li>
+                          <li><a href="/resources/blogs.html">Blogs</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+		  <li>
+              <ul id="releases-menu" class="menu">
+                  <li><a href="/releases/first-release.html">Releases</a>
+                      <ul>
+                          <li><a href="/releases/first-release.html">What's new</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+		<div id="eggContainer">
+		<div align="center">
+			<a href="https://projects.eclipse.org/projects/technology.omr" style="padding-right: 0px;">
+				<img id="incubatingIcon" align="center" src="../../images/incubating.png" border="0" alt="Incubation" />
+			</a>
+		</div>
+		<h6 id="incubateText">Incubation</h6>
+	</div>
+  </div>
+</header>
+
+
+      <div id="overlay"></div>
+
+      
+<h1 id="coding-standards">Coding standards</h1>
+
+<p>Content is needed for this section of the documentation.</p>
+
+<p>Pull requests are very welcome if you would like to help. For more information about contributing, see: <a href="https://github.com/eclipse/omr/issues/165">https://github.com/eclipse/omr/issues/165</a>.</p>
+
+      
+    </section>
+
+    <a id="top" href="#"><img src="/images/arrow.png"></a>
+
+<footer>
+
+<div id="f_container">
+	
+		<div id="f_1">
+			<div class="f_icon" style="background-image: url(/images/inforound.png);">
+			</div>
+			<div class="f_link_group bold">
+				<span class="f_link">&nbsp;<i class="fa fa-chevron-circle-right f_mini" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://projects.eclipse.org/projects/technology.omr">OMR on Eclipse Technology projects</a>
+				</span>
+				<br>
+				<span class="f_link"><i class="fa fa-graduation-cap f_mini" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://developer.ibm.com/open/omr/">OMR on developerWorks Open</a>
+				</span>	
+			</div>
+		</div>
+		
+		<div id="f_1">
+			<div class="f_icon"  style="background-image: url(/images/GitHub-Mark-64px.png);">
+			</div>
+			<div class="f_link_group bold">
+				<span class="f_link"><i class="fa fa-github-alt f_mini" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/eclipse/omr">Contribute on GitHub</a>
+				</span>
+				<br>
+				<span class="f_link"><i class="fa fa-gavel f_mini" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://github.com/eclipse/omr/blob/master/LICENSE">OMR license on GitHub</a>
+				</span>
+			</div>
+		</div>
+
+		<div id="f_1">
+			<div class="f_icon"  style="background-image: url(/images/fa_thumb_up.png);">
+			</div>
+			<div class="f_link_group bold">
+				<span class="f_link"><i class="fa fa-twitter f_mini" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://twitter.com/eclipseomr">Follow us on Twitter</a>
+				</span>
+				<br>
+				<span class="f_link"><i class="fa fa-youtube-play f_mini" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCO8MkTRrFnLefi5nqReOMMA">OMR on YouTube</a>
+				</span>
+			</div>
+		</div>
+		
+</div>
+
+<!--<div id="f_container_3">
+		<div id="f_2">
+			<div align="center">
+				<a href="https://projects.eclipse.org/projects/technology.omr">
+					<img id="incubatingIcon" align="center" src="../../images/incubating.png" border="0" alt="Incubation" />
+				</a>
+			</div>
+			<h6 id="incubateText">Incubation</h6>
+		</div>
+</div>-->
+
+<div id="f_container_2">
+
+		<div id="f_1">
+			<div class="f_link_group bold">
+				<span class="f_link_2">&nbsp;<i class="fa fa-chevron-circle-right f_mini" aria-hidden="true"></i>&nbsp;<a href="http://www.eclipse.org">Eclipse Foundation website</a>
+				</span>
+				<span class="f_link_2">&nbsp;<i class="fa fa-chevron-circle-right f_mini" aria-hidden="true"></i>&nbsp;<a href="http://www.eclipse.org/legal/privacy.php">Privacy policy</a>
+				</span>
+				<span class="f_link_2">&nbsp;<i class="fa fa-chevron-circle-right f_mini" aria-hidden="true"></i>&nbsp;<a href="http://www.eclipse.org/legal/termsofuse.php">Website terms of use</a>
+				</span>
+				<span class="f_link_2">&nbsp;<i class="fa fa-chevron-circle-right f_mini" aria-hidden="true"></i>&nbsp;<a href="http://www.eclipse.org/legal/copyright.php">Copyright agent</a>
+				</span>
+				<span class="f_link_2">&nbsp;<i class="fa fa-chevron-circle-right f_mini" aria-hidden="true"></i>&nbsp;<a href="http://www.eclipse.org/legal">Legal</a>
+				</span>
+			</div>
+		</div>
+</div>
+<!--
+     <div id="footer-content">
+        <div id="sponsor">OMR is an <a href="https://projects.eclipse.org/projects/technology.omr">Eclipse Technology project</a>. </div>
+        <div id="git"><a href="https://github.com/eclipse/omr"> Contribute on GitHub</a>
+        </div>
+		        <div id="twitter"><a href="https://twitter.com/eclipseomr"><i class="fa fa-twitter" id="tw-icon" aria-hidden="true"></i>   Follow us on Twitter</a>
+        </div>
+	</div>
+-->
+</footer>
+
+
+  </body>
+
+</html>
